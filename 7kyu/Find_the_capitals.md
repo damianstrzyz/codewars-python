@@ -9,8 +9,10 @@ Test.assertSimilar( capitals('CodEWaRs'), [0,3,4,6] );
 ```python
 def capitals(word):
     word_index = []
+    x = 0
     for i in word:    
         if i.isupper():
-            word_index.append(word.index(i))
+            word_index.append(x)
+        x += 1
     return word_index
 ```
