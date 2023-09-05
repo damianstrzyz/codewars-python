@@ -13,7 +13,7 @@ unique_in_order((1, 2, 2, 3, 3))   == [1, 2, 3]
 def unique_in_order(sequence):
     new_list =[]
     for i in sequence:
-        if len(new_list) < 1 or not i == new_list[len(new_list) - 1]:
+        if len(new_list) < 1 or i != new_list[len(new_list) - 1]:
             print (i)
             new_list.append(i)
     return new_list
